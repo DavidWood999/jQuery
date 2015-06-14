@@ -1,0 +1,11 @@
+body,table,div{
+	margin: 0;
+	padding: 0;
+}
+
+table {height: 30px;line-height: 30px;}
+table tr{text-align: center;}
+table tr.head{background-color: #bfdfff;}
+table tr.odd{background-color: #d2e9ff;}
+table tr.even{background-color: #ffffff;}
+table tr:hover{background-color: #ffff80;}
