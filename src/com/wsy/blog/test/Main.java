@@ -10,16 +10,16 @@ public class Main {
 
 	public static void main(String[] args) {
 		System.out.println(1+2);
-//		System.out.println("=====================start========================");
-//		System.out.println(1+2);
-//		
-//		forLoop(100);
-//		System.out.println("======================end=======================");
-//		
-//		System.out.println("this is a test app...");
-//		
-//		List<Integer> list = AddList(100);
-//		printCollection(list);
+		System.out.println("=====================start========================");
+		System.out.println(1+2);
+		
+		forLoop(100);
+		System.out.println("======================end=======================");
+		
+		System.out.println("this is a test app...");
+		
+		List<Integer> list = AddList(100);
+		printCollection(list);
 	}
 
 	public static void forLoop(Integer n){
