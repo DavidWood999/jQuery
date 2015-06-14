@@ -18,10 +18,12 @@ public class Main {
 		
 		System.out.println("this is a test app...");
 		
+		System.out.println("=====================start========================");
 		List<Integer> list = AddList(100);
 		printCollection(list);
 		
 		System.out.println("+++++++++++++++++++++++++++++++++++++++++++++");
+		System.out.println("======================end=======================");
 	}
 
 	public static void forLoop(Integer n){
