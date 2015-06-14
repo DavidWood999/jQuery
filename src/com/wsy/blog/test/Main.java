@@ -20,6 +20,8 @@ public class Main {
 		
 		List<Integer> list = AddList(100);
 		printCollection(list);
+		
+		System.out.println("+++++++++++++++++++++++++++++++++++++++++++++");
 	}
 
 	public static void forLoop(Integer n){

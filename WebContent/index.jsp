@@ -11,8 +11,6 @@
 <link rel="stylesheet" type="text/css" href="${path }/front/styles/common.css">
 </head>
 <body>
-ddddddddddddddddd
-
 <div style="margin-left: auto; margin-right: auto; width: 90%;">
 <table id="table1" class="table" border="1" width="100%" cellpadding="0" cellspacing="0">
 	<caption>****学生花名册</caption>
