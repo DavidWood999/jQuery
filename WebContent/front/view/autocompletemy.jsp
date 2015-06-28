@@ -7,7 +7,7 @@
 <link rel="stylesheet" type="text/css" href="../plugins/autocomplet/jquery.autocomplete.css">
 </head>
 <body>
-	<div>dd关键词:<input type="text" name="keyword" id="keyword" /></div>
+	<div>关键词一:<input type="text" name="keyword1" id="keyword1" />  关键词二:<input type="text" name="keyword2" id="keyword2" /></div>
 </body>
 
 <script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
@@ -26,10 +26,10 @@ var emails = [
               { name: "诸葛亮", to: "write@writable.com" },
               { name: "庞统", to: "Bond@qq.com" },
               { name: "成龙", to: "zhuzhu@qq.com" }
-          ];
+          ];         
           
 $(function(){
-    $('#keyword').autocomplete(emails, {
+     $('#keyword1').autocomplete(emails, {
         max: 100,    //列表里的条目数
         minChars: 0,    //自动完成激活之前填入的最小字符
         width: 400,     //提示的宽度，溢出隐藏
@@ -47,7 +47,25 @@ $(function(){
         }
     }).result(function(event, row, formatted) {
         alert(row.to);
-    });
+    }); 
+    
+    $("#keyword2").autocomplete(emails, {
+    	max: 100,    //列表里的条目数
+		mustMatch: true,
+		matchContains: true,
+		formatItem: function(row) {
+			return "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\"><tr><td class=\"ac_rowl\">" + row.name + "</td><tr></table>";
+		},
+		formatMatch: function(row, i, max) {
+			return row.name;
+		},
+		formatResult: function(row) {
+			return row.to;
+		},
+		onSelect: function(row, input) {
+			$("#keyword").val(row.name);
+		}
+	});
 });
 </script>
 </html>
